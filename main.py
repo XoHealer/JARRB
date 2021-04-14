@@ -1,3 +1,4 @@
+#Coded by https://github.com/XoHealer
 import discord
 import os
 import time
@@ -5,6 +6,9 @@ import itertools
 from discord.ext import commands
 from discord.ext import tasks
 from itertools import cycle
+#version
+version = "1.2"
+
 # defines the bot as client for use of this code
 client = commands.Bot(command_prefix='R', help_command=None)
 statuses = cycle([
@@ -15,18 +19,36 @@ statuses = cycle([
 @client.event
 async def on_ready():
     change_status.start()
-    print('Bot has loaded and is online')
+    print ("------------------------------------")
+    print ("Bot Name: " + client.user.name)
+    print ("Bot ID: " + str(client.user.id))
+    print ("Discord Version: " + discord.__version__)
+    print ("Bot Version " + version)
+    print ("------------------------------------")
 
 #tasks
 @tasks.loop(seconds=600)
 async def change_status():
     await client.change_presence(activity=discord.Game(next(statuses)))
 
+#error handler
+@client.event
+async def on_command_error(ctx, error):
+    if isinstance(error, commands.MissingRequiredArgument):
+        await ctx.send('You are missing a person to rick roll!')
+    else:
+        pass
+#heartbeat
 @client.command()
 async def ping(ctx):
   await ctx.send(f'Pong! latency is {round(client.latency * 1000)}ms')
   print(f'pong! latency is {round(client.latency * 1000)}ms')
 
+#manual rick roll
+@client.command(aliases=['RR'])
+async def rickroll(ctx, member : discord.Member):
+    await ctx.send(f'https://www.youtube.com/watch?v=dQw4w9WgXcQ {member.mention}')
+    
 @client.command()
 async def help(ctx):
     Help = discord.Embed(
@@ -58,4 +80,5 @@ async def on_message(message):
             else:
                 pass
     await client.process_commands(message)
-client.run('ODMxODUxNzg5ODMzODYzMTk4.YHbQWQ.zH4PxVcu_ilx2u1g77XooChjTx4')
+client.run('TOKEN')
+#Coded by https://github.com/XoHealer
