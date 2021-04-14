@@ -88,7 +88,8 @@ keywords = ["nggyu", "never gonna give you up", "rick", "astley", "rick astley",
 #on message check for keywords
 @client.event
 async def on_message(message):
-    potrick = message.content.lower()
+    #identifies message as lower (makes it all lowercase and assigns it variable potential rick roll.)
+    potrick = message.content.lower() 
     for i in range(len(keywords)):
         isbot = message.author.bot
         if isbot:
@@ -103,7 +104,7 @@ async def on_message(message):
                 pass
     #very important allowed for other commands to conintue to function 
     await client.process_commands(message)
-    #client token required to tun the bot
+    #client token required to run the bot
     
 client.run('TOKEN')
 #Coded by https://github.com/XoHealer
