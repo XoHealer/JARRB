@@ -9,3 +9,7 @@ Current Version 1.1
 - Manual Rick roll command
 - Manual ping command to check heartbeat
 - Error handeling for all commands, missing args + unknown command
+
+IMPORTANT:
+- The machine running this bot must have the correct libraries installed - Most importantly https://github.com/Rapptz/discord.py
+- Make sure to include a token in the token slot at the very bottom for fuck sakes.
