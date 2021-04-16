@@ -2,8 +2,7 @@
 Just Another Rick Roll Bot
 You can change this as much as you want but I own what ever version is on here I dont know just annoy people
 
-Current Version 1.2
-![image](https://user-images.githubusercontent.com/43343007/115045251-3d126780-9ece-11eb-9fe5-abfb6a152c67.png)
+Current Version 1.2!
 
 - Json dictionary of keywords to respond to for rick rolling
 - Automatically sends out Rick Rolls upon seeing a message containing a word from the keyword dictionary
