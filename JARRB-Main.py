@@ -1,4 +1,4 @@
-#Coded by https://github.com/XoHealer
+#Coded by https://github.com/XoMiya-WPC
 #Imports and Intents ------------------------------------------------------------
 import discord
 import os
@@ -44,7 +44,7 @@ async def on_ready():
     print ("Bot Name: " + client.user.name)
     print ("Bot ID: " + str(client.user.id))
     print ("Discord Version: " + discord.__version__)
-    print ("Author: XoHealer")
+    print ("Author: XoMiya-WPC")
     print ("Bot Version " + version)
     print ("------------------------------------")
 
@@ -139,4 +139,4 @@ async def on_message(message):
 #Application - Bots Client Token
    
 client.run('TOKEN')
-#Coded by https://github.com/XoHealer
+#Coded by https://github.com/XoMiya-WPC
