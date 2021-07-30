@@ -13,7 +13,7 @@ Current Version 1.2!
 - Confirmation of command success
 - Automatic Rick Roll on server join - dms server member
 
-- For questions or support visit my discord: https://discord.gg/rVX49ss
+- For questions or support visit my discord: https://discord.gg/DxWXw9jmXn
 
 IMPORTANT:
 - The machine running this bot must have the correct libraries installed - Most importantly https://github.com/Rapptz/discord.py
