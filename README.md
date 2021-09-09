@@ -2,7 +2,7 @@
 Just Another Rick Roll Bot
 You can change this as much as you want but I own what ever version is on here I dont know just annoy people
 
-Current Version 1.2!
+Current Version 1.4!
 
  ![ Alt text](Important.gif)
 - Json dictionary of keywords to respond to for rick rolling
