@@ -12,6 +12,8 @@ Current Version 1.4!
 - Error handeling for all commands, missing args + unknown command
 - Confirmation of command success
 - Automatic Rick Roll on server join - dms server member
+- Auto Deletion of Rick roll command making rick rolls even sneakier!
+- New Lyrics Command posts the entire lyrics to NGGYU! Requires Manage Message perms
 
 - For questions or support visit my discord: https://discord.gg/DxWXw9jmXn
 
