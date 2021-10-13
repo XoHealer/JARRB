@@ -21,3 +21,5 @@ IMPORTANT:
 - The machine running this bot must have the correct libraries installed - Most importantly https://github.com/Rapptz/discord.py
 - Make sure to include a token in the token slot at the very bottom for fuck sakes.
 - Make sure to keep the "rollwords.json" in the same directory as "JARRB-Main.py"
+
+![img](https://img.shields.io/github/downloads/XoMiya-WPC/JARRB/total?style=for-the-badge)
